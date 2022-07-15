@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  float:right;
+}
+
+.logo img {
+  float:left;
+  cursor: pointer;
+}
+
+ul >li > a{
+  text-decoration-line: none;
+}
+
+ul li {
+  display: inline-block; 
+  padding: 10px 30px 10px 10px;
+  font-size:20px; 
+}
+
+ul li:hover {
+  color:blue;
+  cursor: pointer;
+}
+
+/* Float four columns side by side */
+.column-post {
+  float: left;
+  cursor: pointer;
+  width: 25%;
+  padding: 0 10px;
+  justify-content: center;
+  position: relative;
+  left: 10%; 
+}
+
+.column-post p {
+ text-align: left;
+ position: relative;
+ bottom: 12px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-post {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    left: 0%;
+  }
+}
+
+/* Style the counter posts */
+.post {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+
+.container {
+  clear:both;
+  overflow:auto;
+}
+
+/* Contact Form */
+form {
+  position: relative;
+  left: 5%;
+}
+
+h1, p {
+text-align: center;
+}
+
+label {
+display:block;
+margin:1em 0 .2em;
+}
+
+/* single-line text, checkbox, and button */
+input, select, textarea {
+display:block;
+width:100%;
+padding:.3em;
+font-size:20px;
+background-color:#fbfbfb;
+border:solid 1px #CCC;
+resize:vertical;
+}
+
+textarea {
+min-height:180px;
+width: 80%;
+}
+
+input[type=submit] {
+background-color: rgb(1, 1, 255);
+cursor: pointer;
+margin:1em 0 0;
+width: 80%;
+color: white;
+border-radius:8px;
+transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+background: #ffff;
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus {
+background-color: #313436;
+color: #fff;
+border-style: solid;
+outline:none;
+}
+
+
+@media screen and (min-width:600px) {
+ /* make the form 2 columns  */
+form:after {
+  content:'';
+  display:block;
+  clear:both;
+  }
+}
+
+.column {
+  width: 50%;
+  padding: 1em;
+  float: left; 
+  position: relative;
+  bottom: 30px;
+}
+ 
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+}
+
+.lead {
+  color: #fff;
+}
+
+
+
+
+
+
